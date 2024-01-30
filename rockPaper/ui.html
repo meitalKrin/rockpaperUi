@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <div id="score" class="score">
+      <div id="playerScore" class="playerScore">
+        <p class="PscoreText">player score</p>
+        <div class="point1P"><span class="dot1P" id="point1P"></span></div>
+        <divc lass="point2P"><span class="dot2P" id="point2P"></span></divc>
+        <div class="point3P"><span class="dot3P" id="point3P"></span></div>
+      </div>
+      <div id="computerScore" class="computerScore">
+        <p class="CscoreText">computer Score</p>
+        <div class="point1C"><span class="dot1C" id="point1C"></span></div>
+        <div class="point2C"><span class="dot2C" id="point2C"></span></div>
+        <div class="point3C"><span class="dot3C" id="point3C"></span></div>
+      </div>
+    </div>
+    <div id="game" class="game">
+      <div id="ui" class="ui">
+        <div id="buttondisp" class="buttondisp" role="button">
+          <p class="playerchoise">player choice</p>
+          <div id="button1" class="button1" role="button">
+            <button
+              id="rock"
+              class="button-82-pushable"
+              role="button"
+              onclick="playerChoicerock()"
+            >
+              <span class="button-82-shadow"></span>
+              <span class="button-82-edge"></span>
+              <span class="button-82-front text"> rock </span>
+            </button>
+          </div>
+          <div id="button2" class="button2">
+            <button
+              id="paper"
+              class="button-82-pushable"
+              role="button"
+              onclick="playerChoicepaper()"
+            >
+              <span class="button-82-shadow"></span>
+              <span class="button-82-edge"></span>
+              <span class="button-82-front text"> paper </span>
+            </button>
+          </div>
+          <div id="button3" class="button3">
+            <button
+              id="sciss"
+              class="button-82-pushable"
+              role="button"
+              onclick="playerChoicescissors()"
+            >
+              <span class="button-82-shadow"></span>
+              <span class="button-82-edge"></span>
+              <span class="button-82-front text"> scissors </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="screens" class="screens">
+        <div id="screen1" class="screen1">
+          <p class="waiting" id="waiting">waiting for player input...</p>
+          <p class="waitingForPc" id="waitingForPc">
+            waiting for computer input...
+          </p>
+          <img src="Animation - 1706182179008.gif" class="loading" />
+        </div>
+      </div>
+      <div id="result" class="result">
+        <!--player input-->
+        <img
+          class="PLAYER"
+          id="rockPlayer"
+          src="IMG_0191.PNG"
+          alt="rockPlayer"
+        />
+        <img
+          class="PLAYER"
+          id="paperPlayer"
+          src="IMG_0192.PNG"
+          alt="paperPlayer"
+        />
+        <img
+          class="PLAYER"
+          id="scissorsPlayer"
+          src="IMG_0193.PNG"
+          alt="scissorsPlayer"
+        />
+        <!--pc input-->
+        <img class="PC" id="scissorsPC" src="IMG_0194.PNG" alt="scissorsPC" />
+        <img class="PC" id="paperPC" src="IMG_0195.PNG" alt="paperPC" />
+        <img class="PC" id="pcRock" src="pcRock.png" alt="rockPC" />
+        <!--result-->
+        <div id="lose" class="res">
+          <p class="res1">lose</p>
+        </div>
+        <div id="win" class="res">
+          <p class="res1">win</p>
+        </div>
+        <div id="tie" class="res">
+          <p class="res1">tie</p>
+        </div>
+      </div>
+    </div>
+    <div class="winscreen" id="winscreen">
+      <div class="backscreen" id="backscreen">
+        <p class="winnertext" id="winnertext"></p>
+        <button class="restart" id="restart" onclick="restGame()">
+          restart
+        </button>
+      </div>
+    </div>
+    <script src="code.js"></script>
+  </body>
+</html>
